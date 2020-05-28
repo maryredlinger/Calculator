@@ -1,11 +1,11 @@
 
-<h1> HEY BABY </h1>
 <h2>Calculate</h2>
 
   <div ng-controller="TodoCtrl">
     <form>
-        <li>Number 1: <input type="text" ng-model="one">
-        <li>Number 2: <input type="text" ng-model="two">
+        <li>Number 1: <input type="text" ng-model="one" (input)="numOne=$event.target.value">
+        <li>Number 2: <input type="text" ng-model="two" (input)="numTwo=$event.target.value">
     </form>
-    <button (click)="multiplyNums" type="button" name="button">Multiply</button>
+    <button (click)="multiplyNums()" type="button" name="button">Multiply</button>
+    <h1>{{total}}</h1>
   </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  multiplyNums(){
-    window.alert("hey")
-  }
+
+  numOne: string;
+  numTwo: string;
+  total = null
+
+  //numOne(event) {console.log(event.target.value);}
+
+  multiplyNums () {
+      this.total = this.numOne * this.numTwo
+  };
 
 }
