@@ -2,10 +2,16 @@
 <h2>Calculate</h2>
 
   <div ng-controller="TodoCtrl">
-    <form>
-        <li>Number 1: <input type="text" ng-model="one" (input)="numOne=$event.target.value">
+    <form #numsForm >
+        <li>Number 1: <input #first type="text" ng-model="one" (input)="numOne=$event.target.value">
         <li>Number 2: <input type="text" ng-model="two" (input)="numTwo=$event.target.value">
-    </form>
+        <br>
     <button (click)="multiplyNums()" type="button" name="button">Multiply</button>
+    <button (click)="addNums()" type="button" name="button">Add</button>
+    <button (click)="subtractNums()" type="button" name="button">Subtract</button>
+    <button (click)="divideNums()" type="button" name="button">Divide</button>
+    <button (click)="numsForm.reset()">Refresh</button>
     <h1>{{total}}</h1>
+    </form>
+
   </div>
