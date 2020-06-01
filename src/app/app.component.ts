@@ -10,10 +10,11 @@ export class AppComponent {
   numTwo: string;
   total = null
 
-  //numOne(event) {console.log(event.target.value);}
-
   multiplyNums () {
-      this.total = this.numOne * this.numTwo
+    let one = +this.numOne
+    let two = +this.numTwo
+
+    this.total = one * two
   };
   addNums () {
       let one = +this.numOne
@@ -22,11 +23,17 @@ export class AppComponent {
       this.total = one + two
   };
   subtractNums () {
-      this.total = this.numOne - this.numTwo
+    let one = +this.numOne
+    let two = +this.numTwo
+
+    this.total = one - two
   };
 
   divideNums () {
-      this.total = this.numOne / this.numTwo
+    let one = +this.numOne
+    let two = +this.numTwo
+
+    this.total = one / two
   };
 
 }
