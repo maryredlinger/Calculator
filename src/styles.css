@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 h2 {
   font-size: 25px;
-  color: blue;
+  color: #60a3bc;
+  text-transform: uppercase;
+
 };
 
 html,
@@ -20,6 +21,18 @@ body {
      align-items: center;
      justify-content: center;
 
+     border-style: groove;
+     border-color: black;
+     padding: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+input {
+  border-radius: 50px;
 }
 
 button {
@@ -32,16 +45,10 @@ button {
   display: inline-block;
   border: none;
   transition: all 0.4s ease 0s;
-};
-
-.button_div {
-  display: flex;
-  justify-content: space-between;
 }
-
-{/*.example_b:hover {
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  transition: all 0.4s ease 0s;
-}*/}
+button:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}

@@ -1,10 +1,13 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
 
+
+<div class="calculator">
 <h1>Calculate 2 Numbers</h1>
 
 <div class="body_div" ng-controller="TodoCtrl">
     <form #numsForm >
-        <h2>Number 1: <input #first type="text" ng-model="one" (input)="numOne=$event.target.value"></h2>
-        <h2>Number 2: <input type="text" ng-model="two" (input)="numTwo=$event.target.value"></h2>
+        <h2>Number <input #first type="number" ng-model="one" (input)="numOne=$event.target.value"></h2>
+        <h2>Number <input type="number" ng-model="two" (input)="numTwo=$event.target.value"></h2>
         <br>
 
       <div class="button_div">
@@ -22,3 +25,4 @@
     </form>
 
   </div>
+</div>
